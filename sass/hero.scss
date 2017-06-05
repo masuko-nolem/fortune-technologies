@@ -1,0 +1,19 @@
+.hero {
+  height: 120vh;
+  background: url('../img/hero-image-2.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 9;
+  .hero-text {
+    margin-top: 120px;
+    h1 {
+      text-transform: uppercase;
+      color: $tertiary-font-color;
+      font-family: $main-font;
+      font-size: 4.5em;
+      line-height: 0.3;
+      letter-spacing: 4px;
+    }
+  }
+}

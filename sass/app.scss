@@ -1,5 +1,11 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-compass";
 @import "variables";
+@import "base";
 @import "nav";
 @import "hero";
+@import "home";
+@import "footer";
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+@import "../font-awesome/scss/font-awesome"
