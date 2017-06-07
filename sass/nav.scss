@@ -6,6 +6,10 @@
   display: none;
 }
 
+.nav-desktop {
+  display: none;
+}
+
 // Binds to JS Toggle
 .navbar-mobile {
   display: none;
@@ -17,7 +21,7 @@
   width: 60px;
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .nav-desktop {
     display: none;
   }
@@ -31,8 +35,7 @@
     background: $main-color;
     width: 100%;
     height: 70px;
-    padding: 55px 0 15px;
-    line-height: 70px;
+    box-shadow: 0 0 6px #262626;
     z-index: 100;
     .navbar-mobile {
       display: block;
@@ -47,7 +50,7 @@
       text-transform: uppercase;
       text-align: center;
       line-height: 1.5;
-      padding-top: 40px;
+      padding: 70px 0 40px 0;
       li {
         float: none;
         hr {
@@ -110,34 +113,40 @@
 // DESKTOP NAVIGATION
 // ******************
 
-.nav-desktop {
-  height: 80px;
-  background-color: $main-color;
-  box-shadow: 0 0 6px #262626;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  .nav-left {
-    img {
-      padding-top: 13px;
-      padding-left: 130px;
+@media (min-width: 801px) {
+  .nav-desktop {
+    display: block;
+    height: 80px;
+    background-color: $main-color;
+    box-shadow: 0 0 6px #262626;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    .nav-left {
+      img {
+        padding-top: 13px;
+        padding-left: 130px;
+      }
     }
-  }
-  .nav-right {
-    ul {
-      list-style-type: none;
-      display: inline-flex;
-      float: right;
-      padding-top: 30px;
-      li {
-        padding-right: 20px;
-        a, a:visited {
-          font-family: $link-font;
-          color: $nav-link-color;
-          text-decoration: none;
-          &:hover {
+    .nav-right {
+      ul {
+        list-style-type: none;
+        display: inline-flex;
+        float: right;
+        padding-top: 30px;
+        li {
+          padding-right: 20px;
+          a.single, a:visited {
+            font-family: $link-font;
+            color: $nav-link-color;
             text-decoration: none;
-            color: $nav-link-hover-color;
+            &:hover {
+              text-decoration: none;
+              color: $nav-link-hover-color;
+            }
+            &.active {
+              color: $nav-link-hover-color;
+            }
           }
         }
       }

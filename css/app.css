@@ -5817,6 +5817,10 @@ button.close {
     margin-top: 70px;
     font-size: 26px; }
 
+.page-container {
+  max-width: 100%;
+  overflow: hidden; }
+
 .row {
   margin-left: 0;
   margin-right: 0; }
@@ -5825,6 +5829,9 @@ button.close {
   p {
     font-size: 1.2em; } }
 .nav-mobile {
+  display: none; }
+
+.nav-desktop {
   display: none; }
 
 .navbar-mobile {
@@ -5836,7 +5843,7 @@ button.close {
   height: 60px;
   width: 60px; }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .nav-desktop {
     display: none; }
 
@@ -5850,8 +5857,7 @@ button.close {
     background: #fff;
     width: 100%;
     height: 70px;
-    padding: 55px 0 15px;
-    line-height: 70px;
+    box-shadow: 0 0 6px #262626;
     z-index: 100; }
     .nav-mobile .navbar-mobile {
       display: block;
@@ -5865,7 +5871,7 @@ button.close {
       text-transform: uppercase;
       text-align: center;
       line-height: 1.5;
-      padding-top: 40px; }
+      padding: 70px 0 40px 0; }
       .nav-mobile .nav-mobile-list li {
         float: none; }
         .nav-mobile .nav-mobile-list li hr {
@@ -5907,31 +5913,34 @@ button.close {
     .nav-x.active span:after {
       transform: rotate(-45deg); }
 
-.nav-desktop {
-  height: 80px;
-  background-color: #fff;
-  box-shadow: 0 0 6px #262626;
-  position: fixed;
-  width: 100%;
-  z-index: 10; }
-  .nav-desktop .nav-left img {
-    padding-top: 13px;
-    padding-left: 130px; }
-  .nav-desktop .nav-right ul {
-    list-style-type: none;
-    display: inline-flex;
-    float: right;
-    padding-top: 30px; }
-    .nav-desktop .nav-right ul li {
-      padding-right: 20px; }
-      .nav-desktop .nav-right ul li a, .nav-desktop .nav-right ul li a:visited {
-        font-family: "Muli", sans-serif;
-        color: #8c8c8c;
-        text-decoration: none; }
-        .nav-desktop .nav-right ul li a:hover, .nav-desktop .nav-right ul li a:visited:hover {
-          text-decoration: none;
-          color: #58a9ec; }
-
+@media (min-width: 801px) {
+  .nav-desktop {
+    display: block;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 0 6px #262626;
+    position: fixed;
+    width: 100%;
+    z-index: 10; }
+    .nav-desktop .nav-left img {
+      padding-top: 13px;
+      padding-left: 130px; }
+    .nav-desktop .nav-right ul {
+      list-style-type: none;
+      display: inline-flex;
+      float: right;
+      padding-top: 30px; }
+      .nav-desktop .nav-right ul li {
+        padding-right: 20px; }
+        .nav-desktop .nav-right ul li a.single, .nav-desktop .nav-right ul li a:visited {
+          font-family: "Muli", sans-serif;
+          color: #8c8c8c;
+          text-decoration: none; }
+          .nav-desktop .nav-right ul li a.single:hover, .nav-desktop .nav-right ul li a:visited:hover {
+            text-decoration: none;
+            color: #58a9ec; }
+          .nav-desktop .nav-right ul li a.single.active, .nav-desktop .nav-right ul li a:visited.active {
+            color: #58a9ec; } }
 .hero {
   background: url("../img/hero-image-2.jpeg");
   background-attachment: fixed;
@@ -6113,6 +6122,9 @@ button.close {
 @media only screen and (min-width: 1680px) {
   .member .bio {
     margin: 40px auto; } }
+@media only screen and (max-width: 450px) {
+  p {
+    font-size: 1.2em; } }
 .footer {
   background-color: #2f2e2e;
   box-shadow: 0 0 7px black;

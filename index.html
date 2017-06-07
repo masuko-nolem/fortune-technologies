@@ -6,6 +6,7 @@
     </head>
     <body>
 
+    <div class="page-container">
     <!-- Nav link scroll point -->
     <a name="home"></a>
 
@@ -33,7 +34,6 @@
         </li>
         <li>
           <a href="#about">About</a>
-          <hr>
         </li>
       </ul>
     </nav>
@@ -46,11 +46,11 @@
           </div>
           <div class="col-xs-7 nav-right">
             <ul class="nav-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#our-service">Our Service</a></li>
-              <li><a href="#technology">Technology</a></li>
-              <li><a href="#member">Member</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a onclick="clickSingleA(this)" class="single active" href="#home">Home</a></li>
+              <li><a onclick="clickSingleA(this)" class="single" class="highlight" href="#our-service">Our Service</a></li>
+              <li><a onclick="clickSingleA(this)" class="single" class="highlight" href="#technology">Technology</a></li>
+              <li><a onclick="clickSingleA(this)" class="single" class="highlight" href="#member">Member</a></li>
+              <li><a onclick="clickSingleA(this)" class="single" class="highlight" href="#about">About</a></li>
             </ul>
           </div>
         </div>
@@ -252,6 +252,9 @@
       <!-- Whitespace below footer -->
       <div class="sub-footer">
       </div>
+      
+    </div>
+    <!-- End of page container -->
 
       <!-- Javascript -->
       <script type="text/javascript" src="js/animateScroll.js"></script>
@@ -259,5 +262,6 @@
       <script type="text/javascript" src="js/fadeIn.js"></script>
       <script type="text/javascript" src="js/BackgroundFadeIn.js"></script>
       <script type="text/javascript" src="js/mobileNavToggle.js"></script>
+      <script type="text/javascript" src="js/highlightClicked.js"></script>
     </body>
   </html>

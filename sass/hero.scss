@@ -1,5 +1,4 @@
 .hero {
-  // height: 210vh;
   background: url('../img/hero-image-2.jpeg');
   background-attachment: fixed;
   background-size: cover;
@@ -36,20 +35,13 @@
     .icon-row {
       margin: 90px auto;
       max-width: 650px;
-      // .icon-column {
-      //   max-width: 160px;
-      // }
       i {
         font-size: 85px;
         color: $tertiary-font-color;
       }
       p {
-        // margin: 15px 0 40px 70px;
         text-align: left;
         width: 75px;
-      }
-      .middle {
-        // margin-left: 50px;
       }
     }
     &.scrolled {
