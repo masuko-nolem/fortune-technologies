@@ -5943,7 +5943,7 @@ button.close {
             color: #58a9ec; }
           .nav-desktop .nav-right ul li a.single.active, .nav-desktop .nav-right ul li a:visited.active {
             color: #58a9ec; } }
-#topButton {
+#topButton, #topButton:visited {
   opacity: 0;
   position: fixed;
   bottom: 20px;
