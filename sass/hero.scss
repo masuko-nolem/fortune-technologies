@@ -1,5 +1,5 @@
 .hero {
-  height: 210vh;
+  // height: 210vh;
   background: url('../img/hero-image-2.jpeg');
   background-attachment: fixed;
   background-size: cover;
@@ -7,7 +7,7 @@
   z-index: 9;
   .hero-text {
     margin-top: 120px;
-    padding-bottom: 50vh;
+    padding-bottom: 60vh;
     h1 {
       text-transform: uppercase;
       color: $tertiary-font-color;
@@ -23,7 +23,7 @@
     -moz-transition: background 1.8s ease;
     -webkit-transition: background 1.8s ease;
     -o-transition: background 1.8s ease;
-    height: 100vh;
+    // height: 100vh;
     padding: 10vh 0;
     h1, p {
       color: $tertiary-font-color;
@@ -34,23 +34,22 @@
       border-color: #fff;
     }
     .icon-row {
-      margin-top: 90px;
-      padding: 0 12%;
+      margin: 90px auto;
+      max-width: 650px;
+      // .icon-column {
+      //   max-width: 160px;
+      // }
       i {
         font-size: 85px;
         color: $tertiary-font-color;
       }
-    }
-    .text-row {
-      padding: 0 12%;
-      margin-top: 40px;
       p {
+        // margin: 15px 0 40px 70px;
         text-align: left;
-        width: 120px;
-        margin-left: 70px;
+        width: 75px;
       }
       .middle {
-        margin-left: 60px;
+        // margin-left: 50px;
       }
     }
     &.scrolled {
@@ -63,6 +62,10 @@
   }
 }
 
+
+// ************************
+// Slide-in animation stuff
+// ************************
 
 .cf:before,
 .cf:after {
@@ -104,4 +107,44 @@
   -o-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
+}
+
+
+// *************
+// MEDIA QUERIES
+// *************
+
+// Main section
+// Turn off parallax scrolling for mobile devices
+@media only screen and (max-width: 800px) {
+  .hero {
+    background-attachment: scroll;
+  }
+}
+
+//Our service section
+@media only screen and (min-width: 485px) and (max-width: 768px) {
+  .our-service {
+    .icon-row {
+      i {
+        margin-top: 25px;
+      }
+      p {
+        margin-left: 30%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 484px) {
+  .our-service {
+    .icon-row {
+      i {
+        margin-top: 25px;
+      }
+      p {
+        margin-left: 18%;
+      }
+    }
+  }
 }
