@@ -6031,6 +6031,9 @@ button.close {
   .our-service .icon-row p {
     margin-left: 30%; } }
 @media only screen and (max-width: 484px) {
+  .hero .hero-text h1 {
+    font-size: 3.8em; }
+
   .our-service .icon-row i {
     margin-top: 25px; }
   .our-service .icon-row p {

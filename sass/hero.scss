@@ -129,6 +129,14 @@
 }
 
 @media only screen and (max-width: 484px) {
+  .hero {
+    .hero-text {
+      h1 {
+        font-size: 3.8em;
+      }
+    }
+  }
+
   .our-service {
     .icon-row {
       i {
