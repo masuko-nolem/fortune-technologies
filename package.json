@@ -1,0 +1,25 @@
+{
+  "name": "fortune-technologies",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "ngrok": "^2.2.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mastroneel/fortune-technologies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mastroneel/fortune-technologies/issues"
+  },
+  "homepage": "https://github.com/mastroneel/fortune-technologies#readme"
+}
